@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:weighttracker/exceptions/exceptions.dart';
-import 'package:weighttracker/notifiers/weight_bloc.dart';
+import 'package:weighttracker/providers/weight.dart';
 import 'package:weighttracker/utils.dart';
 import 'package:provider/provider.dart';
 
@@ -32,11 +32,11 @@ class AddWeightRouteState extends State<AddWeightRoute> {
               TextField(
                 controller: _weightController,
                 inputFormatters: [FilteringTextInputFormatter.allow(RegExp("[0-9.]"))],
-                style: const TextStyle(fontSize: 15, color: Colors.black),
+                style: const TextStyle(fontSize: 55, color: Colors.black),
                 maxLength: 20,
                 textAlign: TextAlign.center,
                 keyboardType: TextInputType.number,
-                decoration: const InputDecoration(hintText: "Enter Weight (Kg)", hintStyle: TextStyle(fontSize: 15, color: Colors.grey)),
+                decoration: const InputDecoration(hintText: "Enter Weight (Kg)", hintStyle: TextStyle(fontSize: 35, color: Colors.grey)),
               ),
               DateTimePicker(onTimeUpdated: (updatedTime) => _selectedTime = updatedTime),
             ],

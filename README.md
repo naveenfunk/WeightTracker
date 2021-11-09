@@ -1,16 +1,12 @@
 # Weight Tracker
 
-A new Flutter project for demonstrating .
+A new Flutter project for demonstrating modular and easily testable code for a weight tracker app.
 
-## Getting Started
+All bonus points are fully developed.
 
-This project is a starting point for a Flutter application.
+### Application uses:
 
-A few resources to get you started if this is your first Flutter project:
+- State Management : Provider
+- Data Persistence : Shared Preferences
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Please find sample apk generated at the root or [click here to view](app-release.apk)

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weighttracker/notifiers/weight_bloc.dart';
+import 'package:weighttracker/providers/weight.dart';
 import 'package:weighttracker/routes/add_weight.dart';
-import 'package:weighttracker/entities/weight.dart';
+import 'package:weighttracker/database/entities/weight.dart';
 import 'package:weighttracker/utils.dart';
 import 'package:provider/provider.dart';
 
@@ -37,7 +37,7 @@ class _WeightListRouteState extends State<WeightListRoute> {
         body: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
-              expandedHeight: _screenHeight * .30,
+              expandedHeight: _screenHeight * .30, // covering 30% of screen
               floating: false,
               pinned: false,
               snap: false,
@@ -48,12 +48,12 @@ class _WeightListRouteState extends State<WeightListRoute> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(context.watch<WeightProvider>().averageWeight.toStringAsFixed(2),
-                        style: const TextStyle(fontSize: 45, color: Colors.black)),
+                        style: const TextStyle(fontSize: 45, color: Colors.white)),
                     const Padding(
                       padding: EdgeInsets.only(top: 10),
                       child: Text(
                         "Average Weight",
-                        style: TextStyle(fontSize: 22, color: Colors.black),
+                        style: TextStyle(fontSize: 22, color: Colors.white),
                       ),
                     )
                   ],
@@ -71,7 +71,7 @@ class _WeightListRouteState extends State<WeightListRoute> {
                       children: [
                         Text(
                           "${_listData.weight.toStringAsFixed(2)} Kg",
-                          style: const TextStyle(fontSize: 13, color: Colors.black38),
+                          style: const TextStyle(fontSize: 13, color: Colors.black87),
                         ),
                         Expanded(child: Container()),
                         Text(

@@ -1,4 +1,4 @@
-import 'package:weighttracker/entities/weight.dart';
+import 'package:weighttracker/database/entities/weight.dart';
 
 abstract class IDatabase {
   void addWeight(Weight weight);

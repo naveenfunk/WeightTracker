@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weighttracker/database/database.dart';
-import 'package:weighttracker/notifiers/weight_bloc.dart';
+import 'package:weighttracker/providers/weight.dart';
 import 'package:weighttracker/routes/weight_list.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

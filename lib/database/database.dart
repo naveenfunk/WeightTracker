@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:weighttracker/database/database_abstraction.dart';
-import 'package:weighttracker/entities/weight.dart';
+import 'package:weighttracker/database/entities/weight.dart';
 
 class Database extends IDatabase {
   final SharedPreferences prefs;
