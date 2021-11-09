@@ -25,7 +25,7 @@ class Database extends IDatabase {
     for (var weight in list) {
       sum += weight.weight;
     }
-    return sum / list.length;
+    return list.isNotEmpty ? sum / list.length : 0;
   }
 
   @override

@@ -71,12 +71,12 @@ class _WeightListRouteState extends State<WeightListRoute> {
                       children: [
                         Text(
                           "${_listData.weight.toStringAsFixed(2)} Kg",
-                          style: const TextStyle(fontSize: 13, color: Colors.black87),
+                          style: const TextStyle(fontSize: 17, color: Colors.black87),
                         ),
                         Expanded(child: Container()),
                         Text(
                           Utils.getFormattedDate(_listData.time),
-                          style: const TextStyle(fontSize: 13, color: Colors.black38),
+                          style: const TextStyle(fontSize: 17, color: Colors.black38),
                         ),
                       ],
                     ),
